@@ -29,12 +29,11 @@ Detect baby cry sound and print the result on screen
 
 ## How to use
 For using in raspberrypi:
-1. Following packages need to be installed in raspberrypi.　　　
-　`matplotlib`　　　
-  `requests`　　　
-  `pyaudio`　　　
-  `numpy`　　　
-  `Naked`
+1. Following packages need to be installed in raspberrypi.</br>`matplotlib`
+  </br>`requests`
+  </br>`pyaudio`
+  </br>`numpy`
+  </br>`Naked`
 2. Hardware need to be connected as shown in the [hardware configuration](#the-hardware-configuration-of-the-baby-detector).
 3. Copy the file:  `Raspberrypi/detect_peaks.py` to the python2.7's library folder of raspberrypi:  `***/lib/python2.7`
 4. Copy  file `Raspberrypi/testForPi.py` to any folder of raspberrypi.
