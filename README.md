@@ -24,16 +24,16 @@ If only the baby cry sound detecting function is required, it can be tested out 
 4. Motion detection.
    To further screen out possible false alert, we introduce a PIR sensor to detect the baby motion at the same time of cry detection, only when the baby cry and motion is detected at the same time can we be sure of the cry event and send the alert.
 
-**The test program running on PC:** 
+**The test program running on PC:**　　　
 Detect baby cry sound and print the result on screen
 
 ## How to use
 For using in raspberrypi:
-1. Following packages need to be installed in raspberrypi.
-  `matplotlib`
-  `requests`
-  `pyaudio`
-  `numpy`
+1. Following packages need to be installed in raspberrypi.　　　
+　`matplotlib`　　　
+  `requests`　　　
+  `pyaudio`　　　
+  `numpy`　　　
   `Naked`
 2. Hardware need to be connected as shown in the [hardware configuration](#the-hardware-configuration-of-the-baby-detector).
 3. Copy the file:  `Raspberrypi/detect_peaks.py` to the python2.7's library folder of raspberrypi:  `***/lib/python2.7`
