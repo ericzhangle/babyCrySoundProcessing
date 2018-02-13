@@ -1,7 +1,7 @@
 # Babycry Sound Processing
 This babycry sound processing program is designed for raspberrypi, the aim is to detect both baby movement and baby cry sound at the same time, then notify the parents of the situation, this program is intented to be used in combination with [babycry webserver](https://github.com/ericzhangle/babycrywebserver), it checked user and device information at the start, record 10 seconds' ambient sound and send through server to the parents' cell phones, and recieve command from customer-side cell phone application (facebook messenger in this case).
 ## Introduction
-The sound processing program is designed for raspberrypi, it requires hardware such as a usb microphone, LEDs, PIR sensor, and raspberrypi, it also requires the [babycry webserver](https://github.com/ericzhangle/babycrywebserver) to function properly. For more detailed overview of how this program is used in the whole picture, please reference the [project report](report/Baby_Monitor_Project_Report.docx).
+The sound processing program is designed for raspberrypi, it requires hardware such as a usb microphone, LEDs, PIR sensor, and raspberrypi, it also requires the [babycry webserver](https://github.com/ericzhangle/babycrywebserver) to function properly. For more detailed overview of how this program is used in the whole picture, please reference the [project report](report).
 
 ## The hardware configuration of the baby detector
 To use the full functions of this program(including the varies status of the detector, motion detection),hardware should be connected to raspberrypi as shown below .
@@ -10,7 +10,7 @@ If only the baby cry sound detecting function is required, it can be tested out 
 
 ## The functions of this web server:
 
-The fully functional baby detector running in raspberrypi:
+**The fully functional baby detector running in raspberrypi:**
 
 1. Show error status of the baby detector
    When the user is not registered in the webserver, or some internal error occurs in the detector, Red LED will be lit, indicating there's an error. If there's no wifi connection for the baby detector, the red LED will blink slowly, indicating the network error.
@@ -24,7 +24,7 @@ The fully functional baby detector running in raspberrypi:
 4. Motion detection.
    To further screen out possible false alert, we introduce a PIR sensor to detect the baby motion at the same time of cry detection, only when the baby cry and motion is detected at the same time can we be sure of the cry event and send the alert.
 
-The test program running on PC:
+**The test program running on PC:**
 Detect baby cry sound and print the result on screen
 
 ## How to use
