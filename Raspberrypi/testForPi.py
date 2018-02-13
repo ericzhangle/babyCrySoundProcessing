@@ -18,20 +18,20 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(23, GPIO.IN,pull_up_down=GPIO.PUD_UP)
 GPIO.setup(17, GPIO.IN) 
 MinDetect = 50
-Running = False
+Running = False  #a flag to hold the current status
 chunk = 1024
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 44100
 checkWF =False
-WAVE_OUTPUT_FILENAME = "babycry.wav"
-WEB_SERVER = 'http://192.168.137.7:3000'
-DeviceID= "12345678"
+WAVE_OUTPUT_FILENAME = "babycry.wav"   #create a file to save the detected baby cry sound 
+WEB_SERVER = 'http://192.168.137.7:3000' # The IP need to be changed to your actual webserver
+DeviceID= "12345678"      # deviceID need to be identical to any one in the database.
 UserID = ""
 Window= 150
 init =False
 send = False
-RECORD_SECONDS = 10
+RECORD_SECONDS = 10   #set how many seconds to record sound after a baby cry is detected
 cryTime =0
 p = pyaudio.PyAudio()
 # plt.axis([ 0, 100,0,10000])
@@ -141,7 +141,7 @@ def ChangeState():
         Running = False
         if stream!=0 and stream.is_stopped():
             stream.stop_stream()
-        thread1 = Thread(target = greenBlink)
+        thread1 = Thread(target = greenBlink) #when in standby stop mode, start to blink green LED
         thread1.start()
 
 def toggle(channel):
@@ -330,7 +330,9 @@ def detecting():
                         avgPeakResult = 0
                         stdPeak = 0
                     print avgPeakResult, stdPeak,averageAmp, len(peaks), np.count_nonzero(ffs[i-99:])/float(len(ffs[i-99:]))
-                    if np.average(avgPeak) <= 2500 and np.std(avgPeak) <200 and averageAmp >20 and len(peaks)>=3 and len(peaks) <14:
+                    if np.average(avgPeak) <= 2500 and np.std(avgPeak) <200 and averageAmp >20 and len(peaks)>=3 and len(peaks) <14: 
+                    #the criteria to detect a baby cry, can be adjusted, the average frequency should be less than 2500, std , average amplitude and how many
+                    #peaks are also considered. 
                         print "baby cry detected"
                         cryTime= time.time() + 10
                     else:
