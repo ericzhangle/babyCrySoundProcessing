@@ -24,7 +24,7 @@ If only the baby cry sound detecting function is required, it can be tested out 
 4. Motion detection.
    To further screen out possible false alert, we introduce a PIR sensor to detect the baby motion at the same time of cry detection, only when the baby cry and motion is detected at the same time can we be sure of the cry event and send the alert.
 
-**The test program running on PC:**　　　
+**The test program running on PC:**　</br>　
 Detect baby cry sound and print the result on screen
 
 ## How to use
