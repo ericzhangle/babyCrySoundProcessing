@@ -10,7 +10,7 @@ If only the baby cry sound detecting function is required, it can be tested out 
 
 ## The functions of this web server:
 
-**The fully functional baby detector running in raspberrypi:**
+### The fully functional baby detector running in raspberrypi:
 
 1. Show error status of the baby detector
    When the user is not registered in the webserver, or some internal error occurs in the detector, Red LED will be lit, indicating there's an error. If there's no wifi connection for the baby detector, the red LED will blink slowly, indicating the network error.
@@ -24,7 +24,7 @@ If only the baby cry sound detecting function is required, it can be tested out 
 4. Motion detection.
    To further screen out possible false alert, we introduce a PIR sensor to detect the baby motion at the same time of cry detection, only when the baby cry and motion is detected at the same time can we be sure of the cry event and send the alert.
 
-**The test program running on PC:**　</br>
+### The test program running on PC:
 Detect baby cry sound and print the result on screen
 
 ## How to use
