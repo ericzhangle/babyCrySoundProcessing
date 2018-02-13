@@ -28,7 +28,7 @@ If only the baby cry sound detecting function is required, it can be tested out 
 Detect baby cry sound and print the result on screen
 
 ## How to use
-For using in raspberrypi:
+### For using in raspberrypi:
 1. Following packages need to be installed in raspberrypi.</br>`matplotlib`
   </br>`requests`
   </br>`pyaudio`
@@ -39,8 +39,8 @@ For using in raspberrypi:
 4. Copy  file `Raspberrypi/testForPi.py` to any folder of raspberrypi.
 5. Run `testForPi.py` with python2.7 like:
  </br>`**/python2.7 testForPi.py`
-</br>
-For testing baby sound detection on PC:
+
+###For testing baby sound detection on PC:
 1. Install  `Virtualenv` if you have not already done so.
 2. Navigate to folder:  `babycry/bin`, and run command:
  </br>`source activate`
