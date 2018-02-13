@@ -39,8 +39,7 @@ Detect baby cry sound and print the result on screen
 4. Copy  file `Raspberrypi/testForPi.py` to any folder of raspberrypi.
 5. Run `testForPi.py` with python2.7 like:
  </br>`**/python2.7 testForPi.py`
-
-###For testing baby sound detection on PC:
+### For testing baby sound detection on PC:
 1. Install  `Virtualenv` if you have not already done so.
 2. Navigate to folder:  `babycry/bin`, and run command:
  </br>`source activate`
