@@ -5,7 +5,7 @@ The sound processing program is designed for raspberrypi, it requires hardware s
 
 ## The hardware configuration of the baby detector
 To use the full functions of this program(including the varies status of the detector, motion detection),hardware should be connected to raspberrypi as shown below .
-![](images/hardware.png)
+![](images/hardware.png) </br>
 If only the baby cry sound detecting function is required, it can be tested out on PC, you can jump to the section. 
 
 ## The functions of this web server:
