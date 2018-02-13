@@ -37,14 +37,14 @@ For using in raspberrypi:
 2. Hardware need to be connected as shown in the [hardware configuration](#the-hardware-configuration-of-the-baby-detector).
 3. Copy the file:  `Raspberrypi/detect_peaks.py` to the python2.7's library folder of raspberrypi:  `***/lib/python2.7`
 4. Copy  file `Raspberrypi/testForPi.py` to any folder of raspberrypi.
-5. Run testForPi.py with python2.7 like:
-`**/python2.7 testForPi.py`
+5. Run `testForPi.py` with python2.7 like:
+ </br>`**/python2.7 testForPi.py`
 For testing baby sound detection on PC.
 6. Install  `Virtualenv` if you have not already done so.
 7. Navigate to folder:  `babycry/bin`, and run command:
-   `source activate`
+ </br>`source activate`
 8. Run following command to start the detecting process:
- `python2.7 test.py`
+ </br>`python2.7 test.py`
 9. A window similar to the following will show indicating the frequency and amplitude of detected sound from the microphone of your PC.
 ![](images/frequencyAamplitude.png)
 10. On the terminal, messages similar to following will show indicating noise or detected baby cry.
