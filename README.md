@@ -39,15 +39,16 @@ For using in raspberrypi:
 4. Copy  file `Raspberrypi/testForPi.py` to any folder of raspberrypi.
 5. Run `testForPi.py` with python2.7 like:
  </br>`**/python2.7 testForPi.py`
-For testing baby sound detection on PC.
-6. Install  `Virtualenv` if you have not already done so.
-7. Navigate to folder:  `babycry/bin`, and run command:
+</br>
+For testing baby sound detection on PC:
+1. Install  `Virtualenv` if you have not already done so.
+2. Navigate to folder:  `babycry/bin`, and run command:
  </br>`source activate`
-8. Run following command to start the detecting process:
+3. Run following command to start the detecting process:
  </br>`python2.7 test.py`
-9. A window similar to the following will show indicating the frequency and amplitude of detected sound from the microphone of your PC.
+4. A window similar to the following will show indicating the frequency and amplitude of detected sound from the microphone of your PC.
 ![](images/frequencyAamplitude.png)
-10. On the terminal, messages similar to following will show indicating noise or detected baby cry.
+5. On the terminal, messages similar to following will show indicating noise or detected baby cry.
 ![](images/output.png)
 
 
